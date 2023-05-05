@@ -1,0 +1,124 @@
+
+
+body{
+    font-family: century-gothic, sans-serif;
+
+}
+
+section{
+    /* background-image: url('file:///C:/Users/NoteBook/Desktop/weither/images/france.svg'); */
+    background-image: url('images/sky3.jpg');
+    background-position: 100% 100%;
+    background-size: cover;
+    background-repeat: repeat-y;
+    position: relative;
+    height: 100vh;
+}
+.layr{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.6);
+    z-index: 1;
+}
+.main-div{
+    z-index: 9;
+    position: absolute;
+
+}
+
+.today-card{
+    background-color: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(2px);
+    border-radius: 25px;
+    box-shadow: 0px 0px 20px #666;
+    overflow: hidden;
+    transition: 0.5s ease;
+}
+
+.today-card:hover{
+    backdrop-filter: blur(30px);
+    transform: scale(1.07);
+}
+
+.day{
+    padding-top: 20px;
+    background-color: rgba(0, 0, 0, 0.7);
+}
+.day p{
+    font-weight: 600;
+    text-transform: uppercase;
+}
+h2,
+h3{
+    color: white;
+    font-size: 3rem;
+}
+h6{
+    color: white;
+    letter-spacing: 2px;
+}
+.max-tmp h3{
+    font-size: 2.5rem;
+}
+
+.min-tmp h3{
+    font-size: 1.5rem;
+}
+
+.today-card  p{
+    font-size: 1.5rem;
+    color: white;
+    letter-spacing: 3px;
+}
+
+.today-card span, 
+.today-card i{
+    font-size: 1rem;
+    color: white;
+}
+.details i{
+    padding-left: 15px;
+}
+
+.location{
+    font-size: 2rem;
+    color: white;
+    font-weight: bold;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+
+.icon{
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 30%;
+    padding: 15px;
+}
+
+
+
+.search{
+    width: 50%;
+    height: 50px;
+    border-radius: 25px;
+    padding: 0 15px;
+    border: none;
+}
+
+.search:focus{
+    outline: none;
+}
+
+.second-sec{
+    display: none;
+}
+@media screen and (max-width:992px) {
+    .second-sec{
+        display: block;
+    }
+    section{
+        height: 120vh;
+    }
+}
